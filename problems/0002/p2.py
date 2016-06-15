@@ -15,4 +15,4 @@ def genfib(max):
    c=p+c
    p=t
 
-print sum(f in genfib(4000000) if f%2 == 0)
+print sum(f for f in genfib(4000000) if f%2 == 0)
