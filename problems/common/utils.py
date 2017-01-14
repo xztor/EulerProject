@@ -55,3 +55,9 @@ def modexp(b, x, m):
      r = r * b
    r = r % m
  return r
+
+def gcd_(a, b):
+ return a if b == 0 else gcd_(b, a%b)
+
+def gcd(a,b):
+ return gcd_(abs(a), abs(b))
